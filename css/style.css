@@ -424,7 +424,6 @@ html[dir=rtl] .search-button {
 }
 .banner-cont{
     overflow: hidden;
-    display: inline-block;
     position: relative;
 }
 .banner-cont:after {
