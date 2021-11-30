@@ -21,7 +21,7 @@
 	   $('.lang-word, .cat-down, .menu-link').click(function (e) {
 		e.preventDefault()
 		var item =  $(this).siblings(".dropdown-content");
-		item.slideToggle(500);
+		item.slideToggle(400);
 		
 		})
     // //main Slider Carousel
