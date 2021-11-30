@@ -1159,6 +1159,7 @@ html[dir=rtl] .social{
     }
     .chevron-down{
         line-height: unset;
+        transition: none;
     }
     .big-menu .dropdown-content {
         background-color: transparent;
@@ -1192,6 +1193,10 @@ html[dir=rtl] .social{
     }
     .dropdown{/*to make flex work*/
         display: block;
+        transition: none;
+    }
+    .big-menu .dropdown{
+        width: 100%;
     }
     .big-menu .lang-section img{
         display: none;
