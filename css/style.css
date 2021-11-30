@@ -1147,11 +1147,11 @@ html[dir=rtl] .social{
     }
     .menu-list{
         margin-inline-end: 0;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
     
     .cat-li {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         border-bottom: none;
     }
     .cat-li>.cat-anchor.active>i::before {
