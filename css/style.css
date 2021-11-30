@@ -118,7 +118,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 .chevron-down::after,
-.hide-txt:after {
+.dropdown .hide-txt:after {
     content: "\f0dd";
     font-family: "Font Awesome 5 Free";
     font-size: 11px;
@@ -218,14 +218,23 @@ html[dir=rtl] .search-button {
     -ms-flex-align: center;
     align-items: center;
 }
+.register-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 .register-section .add-to{
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-inline-end: 15px;
     color: #212121;
     transition: all .3s ease-in-out;
 }
@@ -243,9 +252,9 @@ html[dir=rtl] .search-button {
 .register-section .add-to:hover{
     color: #329865;
 }
-.register-section .add-margin{
+/* .register-section .add-margin{
     margin-inline-end: 15px;
-}
+} */
 .icon-ancor{
     margin-inline-end: 5px;
 }
@@ -289,6 +298,7 @@ html[dir=rtl] .search-button {
     min-width: 160px;
 }
 .menu-link{
+    display: inline;
     color: #000000;
     font-size: 16px;
     font-weight: 400;
@@ -549,7 +559,7 @@ html[dir=rtl] .search-button {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    min-height: 42px;
+    min-height: 26px;
 }
 .product .product-name:hover{
     color: #329865;
@@ -1061,11 +1071,11 @@ html[dir=rtl] .social{
     .top-header .img-logo img{
         max-width: 80px;
     }
-    .nav-head .img-logo img{
+    /* .nav-head .img-logo img{
         max-width: 80px;
-    }
+    } */
     .close-btn{
-        color: #212121;
+        color: #d7d7d7;
         font-size: 19px;
     }
     .first-header{
@@ -1084,12 +1094,15 @@ html[dir=rtl] .social{
         -ms-flex-align: center;
         align-items: center;
     }
-    .register-section .add-margin{
+    .register-section .add-to{
         margin-inline-end: 30px;
     }
     .navgition .dropdown-content{
         display: none;
         transition: none;
+    }
+    .navgition{
+        justify-content: flex-start;
     }
     nav {
         display: block;
@@ -1121,19 +1134,20 @@ html[dir=rtl] .social{
         color: #fff;
         width: 100%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         padding: 27px 20px;
     }
     .nav-header .big-menu {
+        width: 100%;
         display: block;
         flex-direction: column;
         text-align: start;
-        padding: 20px 20px;
+        padding: 15px;
         align-items: baseline;      
     }
     .menu-list{
-        margin-inline-start: 0;
-        margin-bottom: 8px;
+        margin-inline-end: 0;
+        margin-bottom: 10px;
     }
     
     .cat-li {
@@ -1160,6 +1174,10 @@ html[dir=rtl] .social{
     }
     .big-menu .chevron-down{
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
     }
     .big-menu .dropdown-content a{
         padding: 2px 0 2px;

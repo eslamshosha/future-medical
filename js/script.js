@@ -15,7 +15,6 @@
             $("body").removeClass("overflow");
         });
 
-        $(".dropdown .menu-link").addClass("chevron-down");
     }
 
 	   //dropdown inside menu
