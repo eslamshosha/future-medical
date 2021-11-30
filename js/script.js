@@ -22,7 +22,6 @@
 		e.preventDefault()
 		var item =  $(this).siblings(".dropdown-content");
 		item.slideToggle(400);
-		
 		})
     // //main Slider Carousel
     ///////// ** main** /////////

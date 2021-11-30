@@ -1133,7 +1133,7 @@ html[dir=rtl] .social{
         height:auto;
         color: #fff;
         width: 100%;
-        align-items: center;
+        align-items: flex-start;
         padding: 27px 20px;
     }
     .nav-header .big-menu {
@@ -1161,6 +1161,7 @@ html[dir=rtl] .social{
     .chevron-down{
         line-height: unset;
         transition: none;
+        padding: 0;
     }
     .lang-section .dropdown-content,
     .big-menu .dropdown-content {
@@ -1230,6 +1231,7 @@ html[dir=rtl] .social{
     }
     .lang-section{
         display: flex;
+        align-items: flex-start;
     }
     .hide-txt{
         display: none;
