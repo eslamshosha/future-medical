@@ -1134,7 +1134,6 @@ html[dir=rtl] .social{
         color: #fff;
         width: 100%;
         align-items: center;
-        justify-content: flex-end;
         padding: 27px 20px;
     }
     .nav-header .big-menu {
@@ -1147,7 +1146,7 @@ html[dir=rtl] .social{
     }
     .menu-list{
         margin-inline-end: 0;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
         padding: 0 15px;
     }
     
@@ -1163,6 +1162,7 @@ html[dir=rtl] .social{
         line-height: unset;
         transition: none;
     }
+    .lang-section .dropdown-content,
     .big-menu .dropdown-content {
         background-color: transparent;
         text-align: start;
@@ -1174,6 +1174,8 @@ html[dir=rtl] .social{
         opacity: 1;
         left: auto;
         transform: none;
+        display: none;
+        transition: none;
     }
     .big-menu .chevron-down{
         padding: 0;
@@ -1183,7 +1185,7 @@ html[dir=rtl] .social{
         justify-content: space-between;
     }
     .big-menu .dropdown-content a{
-        padding: 2px 0 2px;
+        padding: 8px 20px;
         color: #616161;
         transition: all .3s ease-in-out;
     }
@@ -1195,7 +1197,6 @@ html[dir=rtl] .social{
     }
     .dropdown{/*to make flex work*/
         display: block;
-        transition: none;
     }
     .big-menu .dropdown{
         width: 100%;
@@ -1226,6 +1227,9 @@ html[dir=rtl] .social{
     }
     .hide-big{
         display: block;
+    }
+    .lang-section{
+        display: flex;
     }
     .hide-txt{
         display: none;
