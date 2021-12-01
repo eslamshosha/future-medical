@@ -18,7 +18,7 @@
     }
 
 	   //dropdown inside menu
-	   $('.lang-word, .menu-link').click(function (e) {
+	   $('.lang-word, .menu-drop').click(function (e) {
 		e.preventDefault()
 		var item =  $(this).siblings(".dropdown-content");
 		item.slideToggle(400);
